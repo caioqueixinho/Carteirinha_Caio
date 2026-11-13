@@ -1,14 +1,11 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.di
+package com.rafaelcosta.carteirinhadigital2devest.app.di
 
-import com.rafaelcosta.carteirinhadigital2devest_b.core.auth.AuthTokenStore
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.repository.LoginRepository
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
+import com.rafaelcosta.carteirinhadigital2devest.core.auth.SessionTokenStore
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.repository.UnidadeCurricularRepository
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.domain.repository.LoginRepository
 
 interface AppContainer {
-
+    val sessionTokenStore: SessionTokenStore
     val loginRepository: LoginRepository
-
-    val unidadeCurricularRepository: com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
-
-    val authTokenStore: AuthTokenStore
+    val unidadeCurricularRepository: UnidadeCurricularRepository
 }

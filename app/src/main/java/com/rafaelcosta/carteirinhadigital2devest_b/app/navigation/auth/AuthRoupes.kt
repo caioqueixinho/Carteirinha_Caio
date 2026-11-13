@@ -1,4 +1,5 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.auth
+package com.rafaelcosta.carteirinhadigital2devest.app.navigation.auth
 
-class AuthRoupes {
+object AuthRoutes {
+    const val LOGIN = "auth/login"
 }

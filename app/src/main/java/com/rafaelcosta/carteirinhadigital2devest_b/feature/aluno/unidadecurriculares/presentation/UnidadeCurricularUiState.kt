@@ -1,10 +1,9 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation
+package com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation
 
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model.UnidadeCurricular
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.model.UnidadeCurricular
 
 data class UnidadeCurricularUiState(
-    val listaUnidadesCurriculares: List<com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model.UnidadeCurricular> = emptyList(),
     val isLoading: Boolean = false,
+    val unidades: List<UnidadeCurricular> = emptyList(),
     val errorMessage: String? = null
-) {
-}
+)

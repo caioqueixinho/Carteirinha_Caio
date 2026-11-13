@@ -1,4 +1,4 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.aluno
+package com.rafaelcosta.carteirinhadigital2devest.app.navigation.aluno
 
 object AlunoRoutes {
     const val HOME = "aluno/home"

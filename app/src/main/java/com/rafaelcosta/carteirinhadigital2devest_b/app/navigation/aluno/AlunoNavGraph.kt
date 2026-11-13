@@ -1,18 +1,26 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.aluno
+package com.rafaelcosta.carteirinhadigital2devest.app.navigation.aluno
 
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.remember
+import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavGraphBuilder
 import androidx.navigation.NavHostController
-import com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.GraphRoutes
-import com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.ProfileGuard
-import com.rafaelcosta.carteirinhadigital2devest_b.app.ui.AppShell
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.carteirinha.presetantion.screen.CarteirinhaScreen
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.screen.UnidadeCurricularScreen
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.domain.model.UsuarioLogado
+import androidx.navigation.compose.composable
+import androidx.navigation.navigation
+import com.rafaelcosta.carteirinhadigital2devest.app.navigation.GraphRoutes
+import com.rafaelcosta.carteirinhadigital2devest.app.navigation.ProfileGuard
+import com.rafaelcosta.carteirinhadigital2devest.app.ui.AppShell
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.carteirinha.presentation.screen.CarteirinhaScreen
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.home.presentation.screen.HomeAlunoScreen
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.domain.model.PerfilAcesso
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.domain.model.UsuarioLogado
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.repository.UnidadeCurricularRepository
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.UnidadeCurricularViewModel
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.factory.UnidadeCurricularViewModelFactory
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.screen.UnidadeCurricularScreen
 import kotlinx.coroutines.flow.StateFlow
-
 
 fun NavGraphBuilder.alunoNavGraph(
     navController: NavHostController,

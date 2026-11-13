@@ -1,7 +1,7 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.remote.service
+package com.rafaelcosta.carteirinhadigital2devest.feature.login.data.remote.service
 
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.remote.dto.LoginRequestDto
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.remote.dto.LoginResponseDto
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.data.remote.dto.LoginRequestDto
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.data.remote.dto.LoginResponseDto
 import retrofit2.http.Body
 import retrofit2.http.POST
 

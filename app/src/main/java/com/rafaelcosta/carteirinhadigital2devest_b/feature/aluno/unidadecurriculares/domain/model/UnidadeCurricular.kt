@@ -1,4 +1,4 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model
+package com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.model
 
 data class UnidadeCurricular(
     val id: String,

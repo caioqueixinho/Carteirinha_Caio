@@ -1,19 +1,18 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.factory
+package com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.UnidadeCurricularViewModel
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.repository.UnidadeCurricularRepository
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.UnidadeCurricularViewModel
 
 class UnidadeCurricularViewModelFactory(
-    private val repository: com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
+    private val repository:UnidadeCurricularRepository
 ) : ViewModelProvider.Factory {
+
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
-        if (modelClass.isAssignableFrom(_root_ide_package_.com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.UnidadeCurricularViewModel::class.java)) {
+        if (modelClass.isAssignableFrom(UnidadeCurricularViewModel::class.java)) {
             @Suppress("UNCHECKED_CAST")
-            return _root_ide_package_.com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.UnidadeCurricularViewModel(
-                repository = repository
-            ) as T
+            return UnidadeCurricularViewModel(repository = repository) as T
         }
         throw IllegalArgumentException("ViewModel desconhecido: ${modelClass.name}")
     }

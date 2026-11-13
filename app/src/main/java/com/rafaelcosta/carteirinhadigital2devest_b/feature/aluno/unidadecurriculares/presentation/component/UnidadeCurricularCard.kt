@@ -1,4 +1,4 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.component
+package com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.presentation.component
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -14,12 +14,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model.UnidadeCurricular
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.model.UnidadeCurricular
 
 @Composable
 fun UnidadeCurricularCard(
     modifier: Modifier = Modifier,
-    unidadeCurricular: com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model.UnidadeCurricular
+    unidadeCurricular: UnidadeCurricular
 ) {
     Card(
         shape = RoundedCornerShape(16.dp),
@@ -62,8 +62,8 @@ fun UnidadeCurricularCard(
 )
 @Composable
 fun UnidadeCurricularCardPreview() {
-    _root_ide_package_.com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.presentation.component.UnidadeCurricularCard(
-        unidadeCurricular = _root_ide_package_.com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.model.UnidadeCurricular(
+    UnidadeCurricularCard(
+        unidadeCurricular = UnidadeCurricular(
             id = "1",
             nome = "Matemática",
             professor = "Dr. Silva",

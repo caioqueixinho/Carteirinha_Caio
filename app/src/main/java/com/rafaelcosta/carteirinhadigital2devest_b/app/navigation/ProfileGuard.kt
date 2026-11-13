@@ -1,4 +1,4 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.navigation
+package com.rafaelcosta.carteirinhadigital2devest.app.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect

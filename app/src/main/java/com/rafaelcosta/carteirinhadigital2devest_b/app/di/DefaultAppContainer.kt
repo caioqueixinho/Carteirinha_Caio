@@ -1,13 +1,14 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.di
+package com.rafaelcosta.carteirinhadigital2devest.app.di
 
-import com.rafaelcosta.carteirinhadigital2devest_b.core.auth.SessionTokenStore
-import com.rafaelcosta.carteirinhadigital2devest_b.core.network.NetworkClient
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.data.remote.service.UnidadeCurricularApi
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.data.repository.ApiUnidadeCurricularRepositoryImpl
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.aluno.unidadecurriculares.domain.repository.UnidadeCurricularRepository
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.remote.service.AuthApi
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.repository.ApiLoginRepositoryImpl
-import com.rafaelcosta.carteirinhadigital2devest_b.feature.login.data.repository.LoginRepository
+import com.rafaelcosta.carteirinhadigital2devest.core.auth.SessionTokenStore
+import com.rafaelcosta.carteirinhadigital2devest.core.network.NetworkClient
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.data.remote.service.UnidadeCurricularApi
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.data.repository.ApiUnidadeCurricularRepositoryImpl
+import com.rafaelcosta.carteirinhadigital2devest.feature.aluno.unidadescurriculares.domain.repository.UnidadeCurricularRepository
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.data.remote.service.AuthApi
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.data.repository.ApiLoginRepositoryImpl
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.data.repository.FakeAuthRepository
+import com.rafaelcosta.carteirinhadigital2devest.feature.login.domain.repository.LoginRepository
 
 class DefaultAppContainer : AppContainer {
     override val sessionTokenStore: SessionTokenStore = SessionTokenStore()

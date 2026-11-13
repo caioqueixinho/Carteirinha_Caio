@@ -1,4 +1,4 @@
-package com.rafaelcosta.carteirinhadigital2devest_b.app.navigation.auth
+package com.rafaelcosta.carteirinhadigital2devest.app.navigation.auth
 
 import androidx.compose.runtime.remember
 import androidx.lifecycle.viewmodel.compose.viewModel
